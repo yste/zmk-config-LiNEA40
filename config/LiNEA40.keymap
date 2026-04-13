@@ -34,6 +34,7 @@
 };
 
 // hold control
+
 &mt {
     tapping-term-ms = <300>;
     require-prior-idle-ms = <150>;
@@ -70,7 +71,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,
+            //スクロール方向を逆転,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -188,10 +189,10 @@
 
         CURSOR {
             bindings = <
-&kp LA(TAB)  &kp LC(LS(TAB))         &kp LS(LG(NUMBER_4))  &kp LC(TAB)              &kp LS(LG(N5))                       &trans        &trans          &mkp MB3        &trans           &trans
-&kp HOME     &kp LEFT_ARROW          &kp UP_ARROW          &kp RIGHT_ARROW          &kp END                              &trans        &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp KP_MINUS
-&kp HOME     &kp LS(LG(LEFT_ARROW))  &kp DOWN_ARROW        &kp LS(LG(RIGHT_ARROW))  &trans                               &kp UNDER     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
-&trans       &trans                  &trans                &trans                   &trans          &trans    &kp ENTER  &kp NUMBER_0                  &kp DOT         &kp ENTER        &kp QUESTION
+&kp LA(TAB)  &kp LC(LS(TAB))         &kp LS(LG(NUMBER_4))  &kp LC(TAB)              &kp LS(LG(N5))                    &trans     &trans          &mkp MB3        &trans           &trans
+&kp HOME     &kp LEFT_ARROW          &kp UP_ARROW          &kp RIGHT_ARROW          &kp END                           &trans     &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp KP_MINUS
+&kp HOME     &kp LS(LG(LEFT_ARROW))  &kp DOWN_ARROW        &kp LS(LG(RIGHT_ARROW))  &trans                            &kp UNDER  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
+&trans       &trans                  &trans                &trans                   &trans          &trans    &trans  &trans                     &kp DOT         &kp ENTER        &kp QUESTION
             >;
         };
 
