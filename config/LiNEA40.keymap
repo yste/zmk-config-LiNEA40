@@ -33,6 +33,19 @@
     acceleration-exponent = <0>;
 };
 
+// hold control
+&mt {
+    tapping-term-ms = <300>;
+    require-prior-idle-ms = <150>;
+    flavor = "tap-preferred";
+};
+
+&lt {
+    tapping-term-ms = <300>;
+    require-prior-idle-ms = <150>;
+    flavor = "hold-preferred";
+};
+
 / {
     input_processors {
         zip_wheel_scaler: zip_wheel_scaler {
